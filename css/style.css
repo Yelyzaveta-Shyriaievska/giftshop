@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+.box{
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 40px;
+}
+.nav_item1{
+    color: white;
+    margin-left: 3%;
+}
+.header_img_box{
+    width: 40%;
+    height: 500px;
+}
+.header_list_box{
+    width: 50%;
+    height: 500px;
+    display: flex;
+   flex-direction: column;
+    justify-content: space-around;
+}
+.header_img_box1{
+   width: 50%;
+   height: 500px;
+   display: none;
+}
+.header_img_box1>img{
+   width: 80%;
+   border-radius: 10px;
+}
+.header_img_box2>img{
+   width: 80%;
+   border-radius: 10px;
+}
+.header_img_box>h3{
+   margin-top: 20px;
+}
+.header_img_box1>h3{
+   margin-top: 20px;
+   color: white;
+}
+.header_img_box2>h3{
+   margin-top: 20px;
+   color: white;
+}
+.header_img_box2{
+   width: 50%;
+   height: 500px;
+   display: none;
+}
+.header_list>p{
+   margin-top: 10px;
+}
+.header_list_box h2{
+    color: white;
+    font-size: 36px;
+}
+.header_view{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.header_view img{
+    height: 50px;
+}
+.header_img_box img{
+   width: 100%;
+   border-radius: 10px;
+}
+.header_img_box h3{
+    color: white;
+ }
+ .header_list{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+ }
+ .remove{
+   height: 100px;
+   background: rgb(232, 232, 232);
+   color: black;
+ }
+ .active{
+   height: 150px;
+   background: rgb(54, 49, 49);
+   color: white;
+ }
+ .goods{
+    width: 100%;
+    height: 600px;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: none;
+ }
+ .goods h2{
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 10px;
+ }
+ .cart{
+    width: 30%;
+    height: 450px;
+    background: rgb(233, 233, 233);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+ }
+ .cart img{
+   width: 70%;
+   height: 250px;
+   margin-top: 20px;
+   border-radius: 10px;
+ }
+ .cart h3{
+    width: 100%;
+    text-align: center;
+ }
+ .cart_button1{
+    width: 40%;
+    height: 30px;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+ }
+ .cart_button2{
+   width: 40%;
+   height: 30px;
+   background: black;
+   color: white;
+   text-align: center;
+   border-radius: 10px;
+   margin-top: 50px;
+}
+.cart_button3{
+   width: 40%;
+   height: 30px;
+   background: black;
+   color: white;
+   text-align: center;
+   border-radius: 10px;
+   margin-top: 50px;
+}
+ .shipping_payment{
+    width: 100%;
+    height: 500px;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .items{
+    width: 100%;
+    height: 50px;
+    background: rgb(232, 232, 232);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+ .shipping_payment h2{
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 10px;
+ }
+ .shipping_payment_box{
+    width: 50%;
+    height: 400px;
+ }
+ .it_img{
+    width: 45%;
+    height: 400px;
+ }
+ .items img{
+    height: 30px;
+    width: 30px;
+ }
+ 
+ footer{
+    width: 100%;
+    height:120px;
+    background: black;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ footer p{
+    color:white;
+ }
+ .details1{
+    width: 100%;
+    background: rgb(239, 239, 239);
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+ }
+
+ #button-up{
+   display: none;	
+  width: 5%;
+   position: fixed;
+   right: 20px;
+   bottom: 100px;			
+   transition: .3s;
+ }
+  

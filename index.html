@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="box" >
+        <header>
+            <div class="logo">
+                <img src="img/icons8-gift-64.png" alt="">
+                <h3>Gift Shop</h3>
+            </div>
+            <nav>
+                <div class="nav_item1">Elem 1</div>
+                <div class="nav_item1">Elem 2</div>
+                <div class="nav_item1">Elem 3</div>
+                <div class="nav_item1">Elem 4</div>
+                <div class="nav_item1">Elem 5</div>
+            </nav>
+            <div class="header_img_box">
+                <img src="img/img1.png" alt="">
+                <h3>Diamonds are a girl's best friend.</h3>    
+            </div>
+
+            <div class="header_img_box1">
+                <img src="img/img2.png" alt="">
+                <h3>A ring on a woman's finger is a decoration and <br>
+                    an indicator of obesity at the same time.</h3>    
+            </div>
+
+            <div class="header_img_box2">
+                <img src="img/img3.png" alt="">
+                <h3>My weakness is jewelry. Combining luxury and everyday <br>
+                    life, I create my own style!</h3>    
+            </div> 
+
+            <div class="header_list_box">
+                <h2>Why we?</h2>
+                <div class="header_list active" onclick="braslet()" id="h_l_1">
+                    <h3>1.Bracelets</h3>
+                    <p>These items were worn as amulets against the action of dark forces. Residents of cities in the Sumerian culture put them on their hands to demonstrate the high status of their spouse.</p>
+                </div>
+                <div class="header_list remove" onclick="rings()" id="h_l_2">
+                    <h3>2.Rings</h3>
+                    <p>A hollow (blown) decoration weighs less than a solid (full-weighted) one. This is its main advantage: the less gold it took to make the ring, the cheaper it is.</p>
+                </div>
+                <div class="header_list remove" onclick="hair()" id="h_l_3">
+                    <h3>3.Hair ornaments for every taste</h3>
+                    <p>Use a metallic bobby pin or barrette where your hair parts if you're wearing it down, wavy, straight, or curly. For straight hair, add a clip to both sides, or just one at the side of your part. </p>
+                </div>
+            </div> 
+            <div class="header_view">
+                <img src="img/icons8-below-100.png" alt="">
+            </div> 
+        </header>
+        <main>
+            <section class="goods">
+                <h2>Lorem lorem </h2>
+                <div class="cart">
+                    <img src="img/img5.png" alt="">
+                    <h3 class="cart_1">Buy 0</h3>
+                    <input type="button" value="buy" class="cart_button1">
+                </div>
+                <div class="cart">
+                    <img src="img/images-removebg-preview.png" alt="">
+                    <h3 class="cart_2">Buy 0</h3>
+                    <input type="button" value="buy" class="cart_button2">
+                </div>
+                <div class="cart">
+                    <img src="img/images__1_-removebg-preview.png" alt="">
+                    <h3 class="cart_3">Buy 0</h3>
+                    <input type="button" value="buy" class="cart_button3">
+                </div>
+            </section>
+            <section class="shipping_payment">
+                <h2>Our data </h2>
+                <div class="shipping_payment_box">
+                    <div class="items" onclick="it_1()">
+                        <p>How to find us</p>
+                        <img src="img/icons8-below-48.png" alt="">
+                    </div>
+                    <div class="details1">Dr. Martínka 1590/6, 700 30 Ostrava-jih-Hrabůvka</div>
+
+                    <div class="items"  onclick="it_2()">
+                        <p>Services</p>
+                        <img src="img/icons8-below-48.png" alt="">
+                    </div>
+                    <div class="details1">Courier delivery</div>
+
+                    <div class="items"  onclick="it_3()">
+                        <p>Decor</p>
+                        <img src="img/icons8-below-48.png" alt="">
+                    </div>
+                    <div class="details1">Ribbon, flower</div>
+
+                    <div class="items"  onclick="it_4()">
+                        <p>Contacts</p>
+                        <img src="img/icons8-below-48.png" alt="">
+                    </div>
+                    <div class="details1">
+                        777 726 723 <br>
+                       
+                       gift_shop@gmail.com</div>
+                </div>
+                <img src="img/abb_kartinka_1.png" alt="" class="it_img">
+            </section>
+            <footer>
+                <p>All rights reserved </p>
+            </footer>
+        </main>
+    </div>
+
+    <img id="button-up" src="img/up-circular-interface-button_icon-icons.com_73119.png" alt="">
+    </div>
+</body>
+<script>
+    function rings(){
+        $(".header_img_box1").slideDown(2000).css({"display":"block"})
+        $(".header_img_box").css("display","none")
+        $(".header_img_box2").css("display","none")
+
+        $("#h_l_2").addClass("active")
+        $("#h_l_2").removeClass("remove")
+
+        $("#h_l_1").removeClass("active")
+        $("#h_l_1").addClass("remove")
+
+        $("#h_l_3").addClass("remove")
+        $("#h_l_3").removeClass("active")
+    }
+
+    function braslet(){
+        $(".header_img_box").show(2000).css({"display":"block"})
+        $(".header_img_box1").css("display","none")
+        $(".header_img_box2").css("display","none")
+
+        $("#h_l_2").addClass("remove")
+        $("#h_l_2").removeClass("active")
+
+        $("#h_l_1").removeClass("remove")
+        $("#h_l_1").addClass("active")
+
+        $("#h_l_3").addClass("remove")
+        $("#h_l_3").removeClass("active")
+    }
+
+    function hair(){
+        $(".header_img_box2").slideDown(2000).css({"display":"block"})
+        $(".header_img_box").css("display","none")
+        $(".header_img_box1").css("display","none")
+
+        $("#h_l_2").addClass("remove")
+        $("#h_l_2").removeClass("active")
+
+        $("#h_l_1").removeClass("active")
+        $("#h_l_1").addClass("remove")
+
+        $("#h_l_3").addClass("active")
+        $("#h_l_3").removeClass("remove")
+    }
+
+    $(".header_view").click(function(){
+        $(".goods").slideToggle(3000)
+        $(".goods").css({"display": "flex",
+        "flex-wrap": "wrap",
+        "justify-content":"space-between"})
+    })
+
+    let clicks=0
+    let boost_click=1
+    //1
+    $(document).ready(function(){
+    clicks = +localStorage.getItem('value')
+    $('.cart_1').text( `Buy: ${clicks}`)
+    })
+
+    $('.cart_button1').click(function(){
+    clicks++
+    $('.cart_1').text( `Buy: ${clicks}`)
+    localStorage.setItem('value',clicks)
+    })
+    //2
+    $(document).ready(function(){
+    clicks = +localStorage.getItem('value')
+    $('.cart_2').text( `Buy: ${clicks}`)
+    })
+
+    $('.cart_button2').click(function(){
+    clicks++
+    $('.cart_2').text( `Buy: ${clicks}`)
+    localStorage.setItem('value',clicks)
+    })
+
+    //3
+    $(document).ready(function(){
+    clicks = +localStorage.getItem('value')
+    $('.cart_3').text( `Buy: ${clicks}`)
+    })
+
+    $('.cart_button3').click(function(){
+    clicks++
+    $('.cart_3').text( `Buy: ${clicks}`)
+    localStorage.setItem('value',clicks)
+    })
+
+
+$(document).ready(function() {
+	$('.shipping_payment_box .items').on('click', f_acc);
+
+});
+ 
+function f_acc(){
+  $('.shipping_payment_box .details1').not($(this).next()).slideUp(1000);
+    $(this).next().slideToggle(2000);
+}
+
+function it_1(){
+    $(".it_img").attr("src","img/abb_kartinka_1.png")
+}
+function it_2(){
+    $(".it_img").attr("src","img/img8.png")
+}
+function it_3(){
+    $(".it_img").attr("src","img/img6.png")
+}
+function it_4(){
+    $(".it_img").attr("src","img/img7.png")
+}
+
+$(document).ready(function() { 
+  var button = $('#button-up');	
+  $(window).scroll (function () {
+    if ($(this).scrollTop () > 300) {
+      button.fadeIn();
+    } else {
+      button.fadeOut();
+    }
+});	 
+button.on('click', function(){
+$('body, html').animate({
+scrollTop: 0
+}, 800);
+return false;
+});		 
+});
+</script>
+</html>
